@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET ELEMENT BY CLASS NAME</title>
+    <style>
+        article{
+            border : 1px solid red;
+            margin: 10px;
+            padding:  10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <h2 class="first">This is h2</h2>
+            <h3 class="author">Author </h3>
+            <p class="text">author -1</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae nihil odio tenetur alias aliquam necessitatibus perferendis porro natus veritatis eius?</p>
+        </article>
+        <article>
+            <h2 class="first">This is second</h2>
+            <h3 class="author">Author - 2</h3>
+            <p class="text">author -2</p>
+            <p>Delectus impedit veniam cupiditate minus! Dicta placeat magni aperiam veniam illum perferendis beatae tenetur autem quia, voluptatem blanditiis ipsa porro.</p>
+        </article>
+        <article>
+            <h3 class="author">Author - 3</h3>
+            <p class="text">author -3</p>
+            <p>Quisquam iusto a voluptatibus, voluptates ad laboriosam laborum ut hic pariatur reprehenderit commodi consequatur dolore quo eveniet placeat minima voluptatem?</p>
+        </article>
+        <article>
+            <h2 class="first">This is last</h2>
+            <h3 class="author">Author - 4</h3>
+            <p class="text">author -4</p>
+            <p id="last-one">Atque obcaecati dignissimos exercitationem rerum quidem magnam, ipsam commodi numquam sed non ea dolor minima itaque esse tempora cupiditate totam!</p>
+        </article>
+    </section>
+
+    <script>    
+    var first = document.querySelector("article .first");
+    // for(var i = 0; i < first.length; i++){
+    //     var element = first[i];
+    //     element.style.color = "cyan";
+    // }
+    first.style.color = "cyan";
+    </script>
+</body>
+</html>
